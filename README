@@ -1,0 +1,5 @@
+Project StupidBot
+
+This is a stupid bot for project NewServ. Every month Bot do next sequence of commands: player <bot number>, prod 2 (or less), market, sell <bot product> <max price>, buy 2 <min price>, turn.
+
+P.S. This bot is incompatible with project GameServ!
