@@ -18,7 +18,7 @@ void bot::botread()
 		if (!k)
 		{
 			printf("%sConnection closed!\n\n",buffer);
-			exit(1);
+			exit(0);
 		}
 		weight+=k;
 		buffer[weight]=0;
@@ -133,6 +133,7 @@ void bot::waitnum()
 
 void bot::wait()
 {
+	/*
 	for(int i=0;;)
 	{
 		botread();
@@ -143,6 +144,8 @@ void bot::wait()
 		}
 		if (buffer[i]=='#') break;
 	}
+	*/
+	botread();
 	buffer[0]=0;
 	weight=0;
 }
@@ -180,7 +183,8 @@ void bot::doturn()
 	buffer[0]=0;
 	weight=0;
 	write(sockfd,"turn\n",5);
-	write(0,"turn\n\n",5);
+	write(0,"turn\n\n",6);
+	botread();
 }
 
 void launchbot(int sockfd)
