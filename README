@@ -1,5 +1,15 @@
-Project StupidBot
+Проект StupidBot
 
-This is a stupid bot for project NewServ. Every month Bot do next sequence of commands: player <bot number>, prod 2 (or less), market, sell <bot product> <max price>, buy 2 <min price>, turn.
+Это "тупой" бот для многопользовательского игрового сервера, реализующего игру "Менеджмент".
+Данный проект связан с проектом GameServ, реализующим сам игровой сервер.
 
-P.S. This bot is incompatible with project GameServ!
+Бот реализует следующую последовательность команд в каждом игровом месяце:
+player <номер бота>
+prod 2 //возможно меньше, если недостаточно денег или сырья
+market
+sell <сколько возможно> <макс. стоимость>
+buy 2 <мин. стоимость>
+turn
+
+Найдин Олег
+ВМК, 4 семестр, 2012 год
