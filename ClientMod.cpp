@@ -66,7 +66,7 @@ int main(int argc,char** argv)
 		}
 		mysock.joinserv(port,argv[1]);
 		printf("\nConnection was established\n"); 
-		launchbot(mysock.getfd()); // to BotMod
+		launchbot(mysock.getfd()); // goto BotMod
 		printf("\nGame was over\n\n");
 	}
 	else

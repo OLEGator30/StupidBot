@@ -3,7 +3,7 @@
 
 class bot
 {
-  int sockfd;
+	int sockfd;
 
 	int num;
 	int money;

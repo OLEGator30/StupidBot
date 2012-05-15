@@ -9,7 +9,7 @@
 
 void bot::botread()
 {
-  int k;
+	int k;
 
 	do
 	{
@@ -28,7 +28,7 @@ void bot::botread()
 
 int bot::find()
 {
-  int i=0;
+ 	int i=0;
 	char s[1024];
 
 	while ((buffer[i]<'0')||(buffer[i]>'9')) { ++i; }
@@ -37,9 +37,9 @@ int bot::find()
 		memmove(buffer,buffer+i,weight-=i);
 		i=0;
 	}
-  while ((buffer[i]>='0')&&(buffer[i]<='9'))
+	while ((buffer[i]>='0')&&(buffer[i]<='9'))
 	{
-    s[i]=buffer[i];
+		s[i]=buffer[i];
 		++i;
 	}
 	s[i]=0;
@@ -70,7 +70,7 @@ void bot::market()
 	write(sockfd,"market\n",7);
 	write(0,"market\n",7);
 	botread();
-	find();find();
+	find();find();find();
 	mbuy=find();
 	find();
 	msell=find();
